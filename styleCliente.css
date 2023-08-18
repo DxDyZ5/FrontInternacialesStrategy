@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  background-image: url("background6000.jpg");
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  width: 100%; /* Hacemos que ocupe todo el ancho disponible */
+  height: 100%; /* Hacemos que ocupe toda la altura disponible */
+  padding: 20px;
+}
+
+h1 {
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container-resultado {
+  background-color: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(15px);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.cliente {
+  position: relative;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  min-width: 300px;
+  min-height: 150px;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1; /* Hacemos que ocupe todo el espacio disponible en el contenedor padre */
+}
+
+.cliente:hover {
+  background-color: #e0e0e0;
+}
+
+.cliente h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.cliente p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.reservar-button {
+  background-color: #0E1F2D;
+  color: #ffffff;
+  border: none;
+  padding: 8px 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  margin-left: 340px;
+  text-decoration: none;
+}
+
+.inicio-button {
+  background-color: #0E1F2D;
+  color: #ffffff; 
+  border: none;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: fixed;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+}
+
+.suscribir-button {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border: none;
+  padding: 8px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* Estilos para el botón "Cancelar suscripción" */
+.cancelar-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  border: none;
+  padding: 8px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}

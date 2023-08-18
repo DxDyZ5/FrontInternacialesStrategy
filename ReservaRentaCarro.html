@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="StyleReservaRentaCarro.css">
+  <title>Reserva de Vuelo</title>
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <h2>Reserva de Carro</h2>
+                <form action="">
+                    <div class="inputbox">
+                        <input type="number" name="idCarro" required>
+                        <label for="">IdCarro</label>
+                    </div>
+                    <div class="inputbox">
+                        <select name="formato" id="formato" required>
+                            <option value="" selected disabled hidden>Seleccionar formato...</option>
+                            <option value="json">JSON</option>
+                            <option value="texto">Texto</option>
+                            <option value="excel">Excel</option>
+                        </select>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="Nombre" required>
+                        <label for="">Nombre</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="Apellido" required>
+                        <label for="">Apellido</label>
+                    </div>
+                    <div class="inputbox">
+                        <input type="text" name="NumeroLicenciaConducir" required>
+                        <label for="">Numero de licencia de conducir</label>
+                    </div>
+                    <button class="select-button">Reservar</button>
+                </form>
+            </div>
+        </div>
+        <a id="inicio-button" class="inicio-button" href="presentation.html" >Inicio</a>
+        <script src="scriptReservaRentaCarro.js"></script>
+    </section>
+</body>
+</html>

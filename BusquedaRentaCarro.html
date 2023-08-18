@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sistema de Viajes Internacionales</title>
+  <link rel="stylesheet" type="text/css" href="StyleBusquedaRentaCarro.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Busqueda de Carros</h1>
+    <form>
+      <div class="section">
+        <div class="form-group">
+          <label for="destino">Destino:</label>
+          <input type="text" list="destino-list" id="destino" autocomplete="off">
+          <datalist id="destino-list">
+            <option value="">Elegir destino...</option>
+          </datalist>
+        </div>
+        <div class="form-group">
+          <label for="fecha-inicio">Fecha inicio:</label>
+          <input type="date" id="fecha-inicio">
+        </div>
+        <div class="form-group">
+          <label for="fecha-fin">Fecha fin:</label>
+          <input type="date" id="fecha-fin">
+        </div>
+        <a class="select-button" href="#">Buscar</a>
+      </div>
+    </form>
+    <div class="container-resultado">
+      <table id="Tabla"></table>
+    </div>
+    <a id="reservar-button" class="reservar-button hidden" href="ReservaRentaCarro.html">Reservar</a>
+    <a id="inicio-button" class="inicio-button" href="presentation.html" >Inicio</a>
+  </div>
+  <script src="scriptBusquedaRentaCarros.js"></script>
+</body>
+</html>
